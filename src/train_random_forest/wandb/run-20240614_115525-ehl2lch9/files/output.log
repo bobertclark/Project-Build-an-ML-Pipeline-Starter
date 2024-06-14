@@ -1,0 +1,21 @@
+2024-06-14 11:55:28,423 Minimum price: 10, Maximum price: 350
+2024-06-14 11:55:28,447 Preparing sklearn pipeline
+2024-06-14 11:55:28,448 Fitting
+2024-06-14 11:56:05,759 Scoring
+2024-06-14 11:56:05,875 Score: 0.5339406885517419
+2024-06-14 11:56:05,876 MAE: 33.565065789473685
+2024-06-14 11:56:05,876 Exporting model
+/Users/bob/miniconda3/envs/mlflow-da93339ed90e31f137db8dabdae14e69a71f1301/lib/python3.9/site-packages/mlflow/models/signature.py:130: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  inputs = _infer_schema(model_input)
+Traceback (most recent call last):
+  File "/Users/bob/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal Notes/WGU/Attachments/D501/Project-Build-an-ML-Pipeline-Starter/src/train_random_forest/run.py", line 296, in <module>
+    go(args)
+  File "/Users/bob/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal Notes/WGU/Attachments/D501/Project-Build-an-ML-Pipeline-Starter/src/train_random_forest/run.py", line 99, in go
+    mlflow.sklearn.save_model(
+  File "/Users/bob/miniconda3/envs/mlflow-da93339ed90e31f137db8dabdae14e69a71f1301/lib/python3.9/site-packages/mlflow/sklearn/__init__.py", line 244, in save_model
+    _validate_and_prepare_target_save_path(path)
+  File "/Users/bob/miniconda3/envs/mlflow-da93339ed90e31f137db8dabdae14e69a71f1301/lib/python3.9/site-packages/mlflow/utils/model_utils.py", line 123, in _validate_and_prepare_target_save_path
+    os.makedirs(path, exist_ok=True)
+  File "/Users/bob/miniconda3/envs/mlflow-da93339ed90e31f137db8dabdae14e69a71f1301/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 30] Read-only file system: '/random_forest_dir'

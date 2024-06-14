@@ -1,0 +1,2 @@
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x1066ac640>> (for post_run_cell), with arguments args (<ExecutionResult object at 1066acaf0, execution_count=2 error_before_exec=None error_in_exec=Project robertdclark/nyc_airbnb does not contain artifact: "sample.csv:latest" info=<ExecutionInfo object at 1066ac820, raw_cell="import wandb
+import pandas as pd
